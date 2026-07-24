@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Esencia y Hogar — Sahumerios, Aromatizantes y Perfumes</title>
+  <link rel="icon" type="image/png" href="./img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#"><span>Esencia</span>&nbsp;y&nbsp;Hogar</a>
+      <ul class="nav-links">
+        <li><a href="#porta-sahumerios">Porta Sahumerios</a></li>
+        <li><a href="#sahumerios">Sahumerios</a></li>
+        <li><a href="#cascada">Cascada de Humo</a></li>
+        <li><a href="#aromatizantes">Aromatizantes</a></li>
+        <li><a href="#perfumes">Perfumes</a></li>
+        <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <svg class="smoke-wisp" viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="wispGrad" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0%" stop-color="#c4c8cc" stop-opacity="0"/>
+          <stop offset="35%" stop-color="#c4c8cc" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="#eef0f2" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path class="wisp-path" d="M100 400 C 60 340, 140 300, 100 250 C 60 200, 140 160, 95 110 C 60 70, 130 40, 100 0" fill="none" stroke="url(#wispGrad)" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <div class="hero-content reveal">
+      <p class="hero-sub">Aromas para el hogar</p>
+      <h1>Esencia&nbsp;y&nbsp;Hogar</h1>
+      <p class="hero-desc">Sahumerios · Aromatizantes · Perfumes árabes — buena energía en cada rincón</p>
+      <a href="#sahumerios" class="btn-plata">Ver productos</a>
+    </div>
+    <div class="hero-scroll"><span></span></div>
+  </section>
+
+  <!-- ── BANNER ENVÍO ── -->
+  <div class="envio-banner reveal">
+    <span class="envio-icon">◆</span>
+    <p>Envío a domicilio <strong>sin cargo</strong> en todos nuestros productos</p>
+    <span class="envio-icon">◆</span>
+  </div>
+
+  <!-- ── FRASE 1 ── -->
+  <div class="frase reveal">
+    <p>“Cada aroma transforma un espacio en un refugio.”</p>
+  </div>
+
+  <!-- ── PORTA SAHUMERIOS ── -->
+  <section class="productos section" id="porta-sahumerios">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Para tu ritual diario</p>
+        <h2>Porta Sahumerios</h2>
+        <div class="plata-line"></div>
+        <p class="section-desc">La base que sostiene y protege cada momento de aromaterapia en tu hogar.</p>
+      </div>
+      <div class="cards-grid cards-grid-1">
+
+        <div class="card reveal">
+          <img src="img/porta-sahumerios.jpg" alt="Porta Sahumerios" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Porta Sahumerios</h3>
+          <p>Base artesanal pensada para sostener tus sahumerios con estilo y seguridad, cuidando cada rincón de tu hogar.</p>
+          <div class="card-footer">
+            <span class="precio">$1.500 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Porta%20Sahumerios%20(%241.500).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SAHUMERIOS ── -->
+  <section class="productos section alt" id="sahumerios">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Nuestra selección</p>
+        <h2>Sahumerios</h2>
+        <div class="plata-line"></div>
+        <p class="section-desc">Fragancias naturales e importadas para purificar, equilibrar y perfumar cada ambiente.</p>
+      </div>
+      <div class="cards-grid">
+
+        <div class="card reveal">
+          <img src="img/mantra.jpg" alt="Sahumerios Mantra" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Mantra</h3>
+          <p>Aromas que acompañan la meditación y la calma, ideales para tu momento de conexión.</p>
+          <div class="card-footer">
+            <span class="precio">$1.800 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Sahumerio%20Mantra%20(%241.800).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img src="img/iluminarte.jpg" alt="Sahumerios Iluminarte" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Iluminarte</h3>
+          <p>Una fragancia envolvente que ilumina los espacios y renueva la energía del ambiente.</p>
+          <div class="card-footer">
+            <span class="precio">$2.200 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Sahumerio%20Iluminarte%20(%242.200).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img src="img/bombay-tibetanos.jpg" alt="Bombay Tibetanos" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Bombay Tibetanos</h3>
+          <p>Inspirados en la tradición tibetana, combinan hierbas y resinas para una purificación profunda.</p>
+          <div class="card-footer">
+            <span class="precio">$2.200 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Sahumerio%20Bombay%20Tibetanos%20(%242.200).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img src="img/natural-premium.jpg" alt="Natural Premium" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Natural Premium</h3>
+          <p>Elaborados con ingredientes naturales seleccionados, de aroma suave y duradero.</p>
+          <div class="card-footer">
+            <span class="precio">$2.200 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Sahumerio%20Natural%20Premium%20(%242.200).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img src="img/tao-tibetanos.jpg" alt="Tao Tibetanos" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Tao Tibetanos</h3>
+          <p>Equilibrio y armonía en cada varilla, pensados para restaurar la paz interior.</p>
+          <div class="card-footer">
+            <span class="precio">$2.200 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Sahumerio%20Tao%20Tibetanos%20(%242.200).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img src="img/iluminarte-duende.jpg" alt="Iluminarte Duende" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Iluminarte Duende</h3>
+          <p>Un toque místico y juguetón que aviva la magia de tu hogar.</p>
+          <div class="card-footer">
+            <span class="precio">$2.200 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Sahumerio%20Iluminarte%20Duende%20(%242.200).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img src="img/gold-edition-aromanza.jpg" alt="Gold Edition Aromanza" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Gold Edition Aromanza</h3>
+          <p>Edición premium de aroma intenso y sofisticado, para espacios que buscan distinción.</p>
+          <div class="card-footer">
+            <span class="precio">$3.000 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Gold%20Edition%20Aromanza%20(%243.000).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img src="img/importados.jpg" alt="Sahumerios Importados" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Nuevos Importados</h3>
+          <p>Selección exclusiva importada, con fragancias únicas y difíciles de encontrar.</p>
+          <div class="card-footer">
+            <span class="precio">$1.800 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20los%20Sahumerios%20Nuevos%20Importados%20(%241.800).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img src="img/alaukik.jpg" alt="Alaukik x50 varillas" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Alaukik x50 varillas</h3>
+          <p>Caja de 50 varillas de larga duración (1 hora cada una), perfectas para sesiones extendidas de armonización.</p>
+          <div class="card-footer">
+            <span class="precio">$4.500 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Alaukik%20x50%20varillas%20(%244.500).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img src="img/palo-santo.jpg" alt="Natural Premium Palo Santo" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Natural Premium Palo Santo</h3>
+          <p>El clásico palo santo en sahumerio, ideal para limpiar energías y renovar el aire de tu casa.</p>
+          <div class="card-footer">
+            <span class="precio">$2.000 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Sahumerio%20Palo%20Santo%20(%242.000).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FRASE 2 ── -->
+  <div class="frase reveal">
+    <p>“Pequeños rituales, grandes cambios de energía.”</p>
+  </div>
+
+  <!-- ── CASCADA DE HUMO ── -->
+  <section class="productos section" id="cascada">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Efecto visual y aromático</p>
+        <h2>Conos para Cascada de Humo</h2>
+        <div class="plata-line"></div>
+        <p class="section-desc">El ritual del humo que desciende: aroma, calma y un efecto hipnótico para tu espacio.</p>
+      </div>
+      <div class="cards-grid cards-grid-2">
+
+        <div class="card reveal">
+          <img src="img/conito-cascada.jpg" alt="Conito para Cascada de Humo" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Conito para Cascada</h3>
+          <p>Pequeños conos diseñados para crear el efecto cascada, un ritual visual y aromático único.</p>
+          <div class="card-footer">
+            <span class="precio">$2.000 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Conito%20para%20Cascada%20de%20Humo%20(%242.000).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <img src="img/cono-cascada.jpg" alt="Cono para Cascada" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Cono para Cascada</h3>
+          <p>Versión clásica del cono para cascada de humo, con aroma envolvente y efecto relajante.</p>
+          <div class="card-footer">
+            <span class="precio">$2.000 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Cono%20para%20Cascada%20(%242.000).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── AROMATIZANTES ── -->
+  <section class="productos section alt" id="aromatizantes">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Perfumá tu día a día</p>
+        <h2>Aromatizantes</h2>
+        <div class="plata-line"></div>
+      </div>
+      <div class="cards-grid cards-grid-1">
+
+        <div class="card reveal">
+          <img src="img/ambar.jpg" alt="Aromatizante Ámbar" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Aromatizante Ámbar</h3>
+          <p>Fragancia cálida y envolvente de ámbar, ideal para perfumar tu hogar todos los días.</p>
+          <div class="card-footer">
+            <span class="precio">$3.000 <small>c/u</small></span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20el%20Aromatizante%20%C3%81mbar%20(%243.000).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FRASE 3 ── -->
+  <div class="frase reveal">
+    <p>“Un buen aroma es la primera bienvenida a tu casa.”</p>
+  </div>
+
+  <!-- ── PERFUMES ── -->
+  <section class="productos section" id="perfumes">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Alta perfumería</p>
+        <h2>Perfumes Árabes</h2>
+        <div class="plata-line"></div>
+        <p class="section-desc">Esencias árabes de alta concentración, para hombre y mujer.</p>
+      </div>
+      <div class="cards-grid cards-grid-1">
+
+        <div class="card card-perfume reveal">
+          <img src="img/perfume-arabe.jpg" alt="Perfumes Árabes" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')"/>
+          <div class="img-placeholder">◆</div>
+          <h3>Perfumes Árabes — Hombre y Mujer</h3>
+          <p>Esencias árabes de alta concentración, aromas intensos y duraderos, pensados tanto para él como para ella.</p>
+          <div class="card-footer">
+            <span class="precio">$40.000</span>
+            <a href="https://wa.me/5493489662977?text=Hola%2C%20me%20interesa%20un%20Perfume%20%C3%81rabe%20(%2440.000).%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" class="btn-servicio">Consultar</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ── -->
+  <section class="contacto section" id="contacto">
+    <div class="container contacto-inner reveal">
+      <div class="section-header">
+        <p class="section-label">Hablemos</p>
+        <h2>Contacto</h2>
+        <div class="plata-line"></div>
+      </div>
+      <p class="contacto-desc">¿Tenés dudas o querés hacer un pedido? Escribinos por WhatsApp y coordinamos el envío a domicilio sin cargo.</p>
+      <a href="https://wa.me/5493489662977?text=Hola%2C%20quiero%20consultar%20sobre%20los%20productos%20de%20Esencia%20y%20Hogar." target="_blank" class="btn-whatsapp">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.556 4.121 1.529 5.855L.057 23.428a.75.75 0 00.921.921l5.573-1.472A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 01-5.001-1.384l-.36-.214-3.733.985.985-3.733-.214-.36A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Escribinos por WhatsApp
+      </a>
+      <p class="envio-mini">◆ Envío a domicilio sin cargo en todos los pedidos ◆</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p>© 2026 Esencia y Hogar · Sahumerios, Aromatizantes y Perfumes · Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
