@@ -171,17 +171,41 @@ h3 { font-size: 1.1rem; }
 }
 .btn-whatsapp:hover { background: #1db855; transform: translateY(-2px); }
 
-/* ── Banner envío ── */
+/* ── Banner envío (llamativo) ── */
 .envio-banner {
-  display: flex; align-items: center; justify-content: center; gap: 1rem;
-  background: var(--bg3); border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 0.9rem 1rem; text-align: center;
+  display: flex; align-items: center; justify-content: center; gap: 0.9rem;
+  background: linear-gradient(90deg, #7d4e30, var(--warm) 50%, #7d4e30);
+  background-size: 200% 100%;
+  animation: envioShift 6s ease-in-out infinite;
+  padding: 1.1rem 1.5rem; text-align: center;
+  box-shadow: 0 2px 14px rgba(155,107,74,0.35);
+  position: relative;
 }
-.envio-banner p { font-size: 0.85rem; letter-spacing: 0.05em; color: var(--text); }
-.envio-banner strong { color: var(--warm); }
-.envio-icon { color: var(--warm); font-size: 0.7rem; opacity: 0.6; }
-.envio-mini { margin-top: 1.6rem; font-size: 0.78rem; letter-spacing: 0.1em; color: var(--text-dim); }
+@keyframes envioShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.envio-banner p {
+  font-size: 0.92rem; letter-spacing: 0.06em; color: #fdfaf6;
+}
+.envio-banner strong {
+  color: #ffe9c9; font-weight: 500; letter-spacing: 0.12em;
+}
+.envio-truck { color: #ffe9c9; flex-shrink: 0; }
+.envio-pulse {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #ffe9c9; flex-shrink: 0;
+  animation: envioPulse 1.8s ease-out infinite;
+}
+@keyframes envioPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(255,233,201,0.55); }
+  70%  { box-shadow: 0 0 0 10px rgba(255,233,201,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,233,201,0); }
+}
+.envio-mini {
+  margin-top: 1.6rem; font-size: 0.85rem; letter-spacing: 0.06em;
+  color: var(--warm); font-weight: 400;
+}
 
 /* ── Frases ── */
 .frase {
@@ -306,5 +330,6 @@ h3 { font-size: 1.1rem; }
 @media (max-width: 600px) {
   .cards-grid, .cards-grid-2 { grid-template-columns: 1fr; }
   .hero-btns { flex-direction: column; align-items: center; }
-  .envio-banner { flex-direction: column; gap: 0.3rem; }
+  .envio-banner { flex-direction: column; gap: 0.4rem; padding: 1.2rem 1rem; }
+  .envio-banner p { font-size: 0.85rem; }
 }
